@@ -1,14 +1,146 @@
-.main-banner {
-	opacity: .4;
-	width: 100%;
-	height: 360px;
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  	box-sizing: border-box; /* IE */
 }
 
+/* Clear fix hack */
+.clearfix:after {
+  	content: ".";
+  	display: block;
+ 	clear: both;
+ 	visibility: hidden;
+  	line-height: 0;
+  	height: 0;
+}
+
+.clear {
+  	clear: both;
+}
+
+.alignright {
+  	float: right;
+  	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+  	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+body {
+  	background-color: #f0efef;
+  	font-size: 12px;
+  	line-height: 1.4;
+  	font-family: 'Open Sans', sans-serif;
+}
+
+.banner-div {
+	overflow: hidden;
+}
+
+
+.main-banner {
+	border: 1px solid black;
+	opacity: .4;
+	width: 100%;
+	height: 270px;
+}
+
+/*header {
+	height: 300px;
+	background-image: url(../images/header2.png);
+	opacity: .4;
+}*/
+
+.main-menu {
+	position: relative;
+	top: -75px;
+	left: auto;
+
+}
+
+.main-menu ul {
+	float: left;
+	margin: auto 0;
+}
 
 .main-menu li {
 	background-color: #0171f7;
 	width: 15%;
-	height: 100px;
-	float: left;
+	padding: 30px 41px;
+	border: 1px solid black;
+	display: inline;
 	text-decoration: none;
+	opacity: .8;
+}
+
+.main-menu li a {
+  	color: white;
+  	list-style-type: none;
+  	text-decoration: none;
+  	font-size: 24px;
+}
+
+
+.home-main-div {
+	background-color: white;
+	height: 350px;
+	width: 33%;
+/*	clear: both;*/
+	float: left;
+	margin: 0 20px;
+	padding: 20px;
+/*	display: inline-block;*/
+	font-size: 18px;
+}
+
+main p {
+	line-height: 1.5;
+}
+
+#in-progress {
+	float: left;
+	font-size: 24px;
+}
+
+aside {
+/*	background-color: red;
+	opacity: .3;*/
+	width: 25%;
+	height: 400px;
+/*	position: relative;
+	top: -125px;*/
+	float: right;
+	margin-bottom: 50px;
+}
+
+footer {
+	width: 100%;
+	height: 155px;
+	margin-top: 20px;
+	padding-top: 20px;
+	clear: both;
+	text-align: center;
+	background-image: url(../images/footer2.png);
+	background-color: blue;
+	background-repeat: repeat-x;
+	opacity: .8;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
 }
