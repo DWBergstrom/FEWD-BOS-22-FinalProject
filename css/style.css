@@ -41,16 +41,20 @@
 
 body {
 	background-color: #d9e0e8;
-  	/*background-color: #f0efef;*/
-  	/*font-size: 12px;*/
   	line-height: 1.4;
   	font-family: 'Open Sans', sans-serif;
+  	/* basic reset below*/
+  	margin: 0;
+	padding: 0;
+	border: 0;
+
 }
 
 .banner-image {
 	height: 275px;
-	opacity: .25;
+	opacity: .35;
 	background-image: url(../images/header2.png);
+	background-color: white;
 	margin-bottom: 40px;
 	border: 1px solid black;
 }
@@ -58,28 +62,33 @@ body {
 .title {
 	position: relative;
 	top: -10em;
-	left: 8em;
+	left: 1em;
 	opacity: .9;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	color: #0e4fd7;
+	text-shadow: black 3px 3px 6px;
+}
+
+.highlight {
+	color: red;
 }
 
 .main-menu {
 	position: relative;
-	top: -16em;
-	left: auto;
+	top: -17em;
+	right: 1em;
 	/*opacity: .9;*/
 }
 
 .main-menu ul {
-	float: left;
+	float: right;
 	margin-bottom: -5em;
 }
 
 .main-menu li {
 	background-color: #0171f7;
 	width: 15%;
-	padding: 30px 41px;
+	padding: 15px 41px;
 	border: 1px solid black;
 	display: inline;
 	text-decoration: none;
@@ -90,7 +99,26 @@ body {
   	color: white;
   	list-style-type: none;
   	text-decoration: none;
-  	font-size: 24px;
+  	font-size: 1.5em;
+}
+
+.main-menu li a:hover {
+	color: red;
+  	list-style-type: none;
+  	text-decoration: underline;
+  	font-size: 1.5em;
+}
+
+.main-menu li:hover {
+	background-color: #1f56a9;
+}
+
+.info-button {
+	display: none;
+}
+
+.more-info-menu {
+	display: none;
 }
 
 main {
@@ -98,57 +126,103 @@ main {
 	margin-left: -15px;
 	width: 75%;
 	height: 450px;
-	/*background-color: blue;*/
 	float: left;
 }
 
 main p {
 	line-height: 1.5;
+	height: auto;
 }
 
 .home-main-div {
-	background-color: white;
-	height: 400px;
+	background-color: #f2f5f9;
 	width: 45%;
+	height: 400px;
 	float: left;
 	margin: 0 21px;
 	padding: 20px;
 	font-size: 18px;
 	text-align: center;
-	border: 5px solid #0171f7;
+	border: 3px solid #0171f7;
 }
 
-.more-info {
+.tablet-main {
+	display: none;
+}
+
+.about-link {
 	color: #0171f7;
 	font-size: 1.2em;
 }
 
+.more-info a:hover {
+	color: blue:
+	text-decoration: none;
+}
+
 aside {
 	margin-top: -120px;
-	float: left;
-	width: 100%;
-	border: 5px solid #0171f7;
-	/*background-color: red;*/
+	margin-bottom: 50px;
+	margin-right: 10px;
+	height: 400px;
+	padding: 5px;
+	float: right;
+	background-color: white;
+	width: 25%;
+	border: 3px solid #0171f7;
 }
 
 .run-map {
-	/*background-color: black;*/
 	width: 100%;
+}
+
+#about-wrapper {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.about-run-map {
+	float: left;
+	width: 45%;
+	margin: -120px 20px 40px 35px;
+	height: auto;
+	padding: 5px;
+	border: 3px solid #0171f7;
+	background-color: white;
 }
 
 .about {
 	float: left;
 	width: 45%;
 	margin: -120px 20px 40px 25px;
-	padding: 5px;
-	border: 5px solid #0171f7;
+	height: auto;
+	padding: 20px 20px 40px 40px;
+	border: 3px solid #0171f7;
 	background-color: white;
 }
 
-#in-progress {
-	margin-top: -140px;
+.awards-list {
+	list-style-type: square;
+}
+
+.course-description {
+	width: 80%;
+	height: auto;
+	clear: both;
+	margin: auto;
+	padding: 30px;
+	border: 3px solid #0171f7;
+	background-color: white;
+}
+
+.results-form {
+	margin-top: -120px;
+	margin-left: 30px;
+	padding: 20px;
 	float: left;
-	font-size: 1.5em;
+	clear: both;
+	border: 3px solid #0171f7;
+	background-color: white;
 }
 
 .formfield {
@@ -156,30 +230,67 @@ aside {
 	border: 0px;	
 }
 
-#about-wrapper {
-	width: 100%;
+.results-heading {
+
+}
+
+.results-section {
+	margin: auto;
 	margin-bottom: 40px;
+	padding: 20px;
+	padding-bottom: 20px;
+	width: 70%;
+	height: auto;
+	border: 3px solid #0171f7;
 	background-color: white;
+	clear: both;
+
+}
+
+.year {
+	display: none;
+}
+
+.results {
+	display: none;
+	width: 100%;
+	border: 1px solid black;
+}
+
+.results th {
+	text-align: center;
+}
+
+.results td {
+	text-align: center;
 }
 
 .photo-grid-wrapper {
-	width: 100%;
-	margin-left: 40px;
+	clear: both;
+	position: relative;
+	left: 2em;
+	margin: auto;
+	width: 80%;
 	margin-bottom: 40px;
-	/*background-color: red;*/
+	padding-top: 40px;
 	height: auto;
+	background-color: white;
+	border: 3px solid #0171f7;
 
 }
 
-#photo-list {
-	list-style-type: none;
-	clear: both;
+#photos-heading	{
+	margin-left: 30px;
+}
+
+.photo-list {
+	display: none;
 }
 
 .photo-grid {
 	float: left;
 	width: 200px;
-	height: 200px;
+	max-height: 285px;
   	margin: 10px;
 }
 
@@ -188,29 +299,61 @@ aside {
 	height: 100%;
 }
 
+#mascot-photo {
+	background-color: red;
+}
+
 .about-festival-wrapper {
+	position: relative;
+	top: -5em;
 	width: 100%;
 	margin-left: 30px;
+	margin-bottom: 20px;
 	
+}
+
+.about-festival-photo {
+	float: left;
+	width: 45%;
+	height: 400px;
+	padding: 20px;
+	margin-left: 20px;
+	border: 3px solid #0171f7;
+	background-color: white;
 }
 
 .about-festival {
 	float: left;
 	width: 45%;
-	/*background-color: red;*/
-	padding: 5px;
+	height: 400px;
+	padding: 20px;
 	margin-left: 20px;
-	border: 5px solid #0171f7;
+	border: 3px solid #0171f7;
+	background-color: white;
 }
 
-aside {
-/*	background-color: red;
-	opacity: .3;*/
-	width: 25%;
-	height: 400px;
-	padding: 5px;
-	float: right;
-	margin-bottom: 50px;
+
+.fund-fest {
+	clear: both;
+	width: 95%;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	border: 3px solid #0171f7;
+	background-color: white;
+	height: 50px;
+	font-size: .9em;
+}
+
+.fund-fest a {
+	text-decoration: none;
+	color: #0171f7;
+}
+
+.fund-fest a:hover {
+	text-decoration: underline;
 }
 
 footer {
@@ -222,13 +365,480 @@ footer {
 	text-align: center;
 	border: 1px solid black;
 	background-image: url(../images/footer2.png);
-	background-color: #0171f7;
+	background-color: white;
 	background-repeat: repeat-x;
 	opacity: .6;
 }
 
 footer a {
 	text-decoration: none;
+	background-color: #0171f7;
+	border: 1px solid black;
+	padding: 10px;
 	color: white;
-	font-size: 1.3em;
+	font-size: 1.35em;
+	text-shadow: black 2px 2px 4px;
 }
+
+footer a:hover {
+	color: red;
+	text-decoration: underline;
+	background-color: #1f56a9;
+	opacity: 1;
+}
+
+.small-footer {
+	display: none;
+}
+
+/******************************************
+/* RESPONSIVE STYLES
+/*******************************************/
+
+@media screen and (max-width: 1150px) {
+
+	.title {
+		position: relative;
+		top: -12em;
+		left: 2em;
+		opacity: .9;
+		font-size: 1.5em;
+		color: #0e4fd7;
+		text-shadow: black 2px 2px 4px;
+	}
+
+	.main-menu	{
+		margin-left: 75px;
+		padding-left: 5px;
+		width: auto;
+		clear: both;
+	}
+	
+	.main-menu li {
+		background-color: #0171f7;
+		width: 10%;
+		padding: 20px 31px;
+		border: 1px solid black;
+		display: inline;
+		text-decoration: none;
+		opacity: .8;
+	}
+
+	.main-menu li a {
+	  	color: white;
+	  	list-style-type: none;
+	  	text-decoration: none;
+	  	font-size: 1em;
+	}
+
+	.main-menu li a:hover {
+		color: red;
+	  	list-style-type: none;
+	  	text-decoration: underline;
+	  	font-size: 1em;
+	}
+
+	main {
+		display: none;
+	}
+
+	.tablet-main {
+		text-align: center;
+		display: inline;
+		float: left;
+		clear: both;
+		margin: auto;
+		margin-top: -7.5em;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		padding: 30px;
+		padding-top: 5px;
+		padding-bottom: 30px;
+		height: auto;
+		width: 70%;
+		background-color: white;
+		border: 3px solid #0171f7;
+	}
+
+	aside {
+		width: 25%;
+	}
+
+	.about {
+		position: relative;
+		top: -7em;
+		left: 6.5em;
+		float: left;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		padding: 20px 20px 40px 40px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.about-run-map {
+		position: relative;
+		top: -4em;
+		left: 6.5em;
+		float: left;
+		clear: both;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		padding: 5px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+}
+
+
+@media screen and (max-width: 1060px) {
+
+	.banner-image {
+		height: 200px;
+		opacity: .25;
+		background-image: url(../images/header2.png);
+		margin-bottom: 40px;
+		border: 1px solid black;
+	}
+
+	.title {
+		position: relative;
+		top: -12em;
+		left: 2em;
+		opacity: .9;
+		font-size: 1.2em;
+		color: #0e4fd7;
+		text-shadow: black 2px 2px 4px;
+	}
+
+	.main-menu	{
+		margin: 40px 15px 0 0;
+		float: right;
+		width: auto;
+		clear: both;
+	}
+	
+	.main-menu li {
+		background-color: #0171f7;
+		width: auto;
+		margin: 0px;
+		padding: 10px 20px;
+		border: 1px solid black;
+		display: inline;
+		text-decoration: none;
+		opacity: .8;
+	}
+
+	.main-menu li a {
+	  	color: white;
+	  	list-style-type: none;
+	  	text-decoration: none;
+	  	font-size: 1em;
+	}
+
+	.main-menu li a:hover {
+		color: red;
+	  	list-style-type: none;
+	  	text-decoration: underline;
+	  	font-size: 1.1em;
+	}
+
+	.home-main-div {
+		display: none;
+	}
+
+	.tablet-main {
+		text-align: center;
+		display: inline;
+		float: left;
+		clear: both;
+		margin-top: -8em;
+		margin-bottom: 20px;
+		margin-left: 90px;
+		padding-top: 5px;
+		height: auto;
+		width: 80%;
+		border: 3px solid #0171f7;
+	}
+
+	main {
+		display: none;
+	}
+
+	aside {
+		display: none;
+		width: 0px;
+	}
+
+}
+
+@media screen and (max-width: 790px) {
+
+	.main-menu {
+		display: none;
+	}
+
+	.info-button {
+		display: inline;
+		position: relative;
+		top: -9em;
+		left: 2em;
+		float: left;
+		background-color: #0171f7;
+		padding: 5px;
+		border: 1px solid black;
+		color: white;
+	  	list-style-type: none;
+	  	font-size: 1.2em;
+		opacity: .8;
+	}
+
+	.info-button p {
+		margin: auto;
+	}
+
+	.info-button p:hover {
+		color: red;
+	  	list-style-type: none;
+	  	text-decoration: underline;
+	}
+
+	.info-button:hover {
+		background-color: #1f56a9;
+	}
+
+	nav ul{
+		display: none;
+	}
+
+	.more-info-menu {
+		display: inline;
+		position: relative;
+		top: -11.3em;
+		right: -1em;
+		background-color: red;
+	}
+
+	.more-info-menu ul {
+		float: left;
+		margin-bottom: -5em;
+	}
+
+	.more-info-menu li {
+		background-color: #0171f7;
+		width: auto;
+		padding: 5px 10px;
+		border: 1px solid black;
+		display: inline;
+		text-decoration: none;
+		opacity: .9;
+	}
+
+	.more-info-menu li a {
+	  	color: white;
+	  	list-style-type: none;
+	  	text-decoration: none;
+	  	font-size: .7em;
+	}
+
+	.more-info-menu li a:hover {
+		color: red;
+	  	list-style-type: none;
+	  	text-decoration: underline;
+	  	font-size: .7em;
+	}
+
+	.more-info-menu li:hover {
+		background-color: #1f56a9;
+	}
+
+	main {
+		display: none;
+	}
+
+	.tablet-main {
+		margin-left: 70px;
+	}
+
+	.about {
+		position: relative;
+		top: -5em;
+		left: -1.5em;
+		float: left;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		padding: 20px 20px 40px 40px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.about-run-map {
+		position: relative;
+		top: -3em;
+		left: 4.7em;
+		float: left;
+		clear: both;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		padding: 5px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.about-festival-wrapper {
+		margin-left: 10px;
+	}
+
+	.about-festival-photo {
+		float: left;
+		width: 25%;
+		height: 140px;
+		padding: 5px;
+		margin-left: 0px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.about-festival {
+		float: left;
+		width: 45%;
+		height: auto;
+		padding: 20px;
+		margin-left: 20px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.fund-fest {
+		height: auto;
+	}
+
+}
+
+
+@media screen and (max-width: 630px) {
+
+
+	.title {
+		width: 300px;
+		position: relative;
+		top: -11em;
+		left: 2em;
+		opacity: .9;
+		font-size: 1.2em;
+		color: #0e4fd7;
+		text-shadow: black 2px 2px 4px;
+	}
+
+	header.banner-image {
+		margin-bottom: -1em;
+	}
+
+	.tablet-main {
+		margin-left: 45px;
+	}
+
+
+	.more-info-menu ul {
+		float: left;
+		margin-bottom: 20px;
+	}
+
+	.results {
+		font-size: .7em;
+	}
+
+	.results-section {
+		width: 90%;
+		padding: 5px;
+	}
+
+	footer a {
+		display: none;
+	}
+
+	.small-footer {
+		display: inline;
+		text-decoration: none;
+		background-color: #0171f7;
+		border: 1px solid black;
+		padding: 10px;
+		color: white;
+		font-size: 1.35em;
+		text-shadow: black 2px 2px 4px;
+	}
+
+	.about-festival-photo {
+		display: none;
+	}
+
+	.about-festival {
+		float: left;
+		width: 90%;
+		height: auto;
+		padding: 20px;
+		margin-left: 15px;
+		margin-top: -60px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.fund-fest {
+		height: auto;
+	}
+
+}
+
+
+@media screen and (max-width: 515px) {
+
+	.about {
+		position: relative;
+		top: -9em;
+		left: 3em;
+		float: left;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		padding: 20px 20px 40px 40px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.about-run-map {
+		position: relative;
+		top: -5em;
+		left: 3em;
+		float: left;
+		clear: both;
+		width: 80%;
+		margin: auto;
+		height: auto;
+		padding: 5px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+	.course-description {
+		width: 80%;
+		height: auto;
+		clear: both;
+		margin: auto;
+		margin-left: 45px;
+		margin-top: -80px;
+		padding: 30px;
+		border: 3px solid #0171f7;
+		background-color: white;
+	}
+
+
+}
+
+
+
+

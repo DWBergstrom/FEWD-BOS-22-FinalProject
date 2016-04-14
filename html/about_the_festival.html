@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>About the Festival</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<!-- <link rel="stylesheet" href="../css/reset.css"> -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900,700,300' rel='stylesheet' type='text/css'>
-<body>
+	<head>
+		<title>About the Festival</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- <link rel="stylesheet" href="../css/reset.css"> -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,800' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900,700,300' rel='stylesheet' type='text/css'>
+	<body>
 
-	<header class="banner-image">
+		<header class="banner-image">
 
-		<!-- Banner image -->
-		
-	</header>
-
-	<div class="title">
-		
-		<h1> The Lumberjack Festival 5k</h1>
-
-	</div>
-
-	<!-- Main navigation menu -->
-	<nav class="main-menu">
-		<ul>
-			<li><a href="home.html">The Lumberjack 5k</a></li>
-			<li><a href="about.html">About the Run</a></li>
-			<li><a href="results.html">Results</a></li>
-			<li><a href="photos.html">Photos</a></li>
-			<li><a href="about_the_festival.html">About the Festival</a></li>
+			<!-- Banner image, implemented as a background image to the header via css -->
 			
-		</ul>
-	</nav>
+		</header>
 
-	<main class="about-festival-wrapper">
-		
-		<div class="about-festival">
-			<img id="mascot" src="../images/ljlogo.jpg">
+		<div class="title">
+			
+			<h1> The Lumberjack Festival <span class="highlight">5k</span></h1>
 
-		</div>	
+		</div>
+
+		<!-- Main navigation menu -->
+		<nav class="main-menu">
+			<ul>
+				<li><a href="../index.html">The Lumberjack 5k</a></li>
+				<li><a href="about.html">About the Run</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="photos.html">Photos</a></li>			
+			</ul>
+		</nav>
+
+		<!-- Nav switches to display:none for smaller screens and is toggled here: -->
+		<div class="info-button">
+			<p>More Info</p>
+		</div>
+
+		<nav class="more-info-menu">
+			<ul>
+				<li><a href="../index.html">The Lumberjack 5k</a></li>
+				<li><a href="about.html">The Run</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="photos.html">Photos</a></li>
+			</ul>		
+		</nav>
+
+		<div class="about-festival-wrapper">
+			
+			<div class="about-festival-photo" id="mascot-photo">
+				<img id="mascot" src="../images/ljlogo.jpg">
+
+			</div>	
 
 
-		<div class="about-festival">
-			<p>About the Festival:</p>
+			<div class="about-festival">
+				<p>
+					<h3>About the Festival:</h3>
+				</p>
+				<p>
+					The Deposit Lumberjack Festival is a three-day fair held in Deposit, NY which includes foods, rides, a craft fair, and many other events -- in particular, the lumberjack competition.  
+				</p>
+				<p>
+					There are many more events, including on the day of the race.  Stick around after the race to check them out! Find out more <a href="http://www.depositlumberjackfestival.org/" target="_blank">here!</a>
+				</p>
+
+				<div class="fund-fest">
+				<b><a href="https://www.gofundme.com/LJF40?utm_source=internal&utm_medium=email&utm_content=cta_button&utm_campaign=upd_n" target="_blank">Consider a donation to support the Lumberjack festival here!</a></b>
+				</div>	
+			</div>
+
 
 		</div>
 
 
-	</main>
+	<footer>
+		<a href="https://www.facebook.com/thelumberjack5k/?ref=hl" target="_blank"><b>More updates available on our Facebook page!</b></a>
 
+		<a class="small-footer" href="https://www.facebook.com/thelumberjack5k/?ref=hl" target="_blank"><b>See our Facebook page!</b></a>
 
-<!-- <aside>
-	
+	</footer>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js" type="text/javascript"></script>
+	<script src="../js/index.js" type="text/javascript"></script>
 
-</aside> -->
-
-
-<footer>
-	<a href="https://www.facebook.com/thelumberjack5k/?ref=hl" target="_blank"><b>Facebook</b></a>
-
-</footer>
-
-</body>
+	</body>
 </html>

@@ -1,81 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Photos</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<!-- <link rel="stylesheet" href="../css/reset.css"> -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,800' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900,700,300' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	
-	<header class="banner-image">
-
-		<!-- Banner image -->
+	<head>
+		<title>Photos</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<!-- <link rel="stylesheet" href="../css/reset.css"> -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,800' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,900,700,300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
 		
-	</header>
+		<header class="banner-image">
 
-	<div class="title">
-		
-		<h1> The Lumberjack Festival 5k</h1>
-
-	</div>
-
-	<!-- Main navigation menu -->
-	<nav class="main-menu">
-		<ul>
-			<li><a href="home.html">The Lumberjack 5k</a></li>
-			<li><a href="about.html">About the Run</a></li>
-			<li><a href="results.html">Results</a></li>
-			<li><a href="photos.html">Photos</a></li>
-			<li><a href="about_the_festival.html">About the Festival</a></li>
+			<!-- Banner image, implemented as a background image to the header via css -->
 			
-		</ul>
-	</nav>
+		</header>
 
+		<div class="title">
+			
+			<h1> The Lumberjack Festival <span class="highlight">5k</span></h1>
 
-<main class="photo-grid-wrapper">
-	
-	<ul id="photo-list">
-		<li><a href="../photos/IMG_9738.jpg"><img  class="photo-grid" src="../photos/IMG_9738.jpg"></a></li>
-		<li><a href="../photos/IMG_9739.jpg"><img  class="photo-grid" src="../photos/IMG_9739.jpg"></a></li>
-		<li><a href="../photos/IMG_9740.jpg"><img  class="photo-grid" src="../photos/IMG_9740.jpg"></a></li>
-		<li><a href="../photos/IMG_9741.jpg"><img  class="photo-grid" src="../photos/IMG_9741.jpg"></a></li>
-		<li><a href="../photos/IMG_9742.jpg"><img  class="photo-grid" src="../photos/IMG_9742.jpg"></a></li>
-		<li><a href="../photos/IMG_9743.jpg"><img  class="photo-grid" src="../photos/IMG_9743.jpg"></a></li>
-		<li><a href="../photos/IMG_9744.jpg"><img  class="photo-grid" src="../photos/IMG_9744.jpg"></a></li>
-		<li><a href="../photos/IMG_9745.jpg"><img  class="photo-grid" src="../photos/IMG_9745.jpg"></a></li>
-		<li><a href="../photos/IMG_9746.jpg"><img  class="photo-grid" src="../photos/IMG_9746.jpg"></a></li>
-		<li><a href="../photos/IMG_9747.jpg"><img  class="photo-grid" src="../photos/IMG_9747.jpg"></a></li>
-		<li><a href="../photos/IMG_9748.jpg"><img  class="photo-grid" src="../photos/IMG_9748.jpg"></a></li>
-		<li><a href="../photos/IMG_9749.jpg"><img  class="photo-grid" src="../photos/IMG_9749.jpg"></a></li>
-		<li><a href="../photos/IMG_9751.jpg"><img  class="photo-grid" src="../photos/IMG_9751.jpg"></a></li>
-		<li><a href="../photos/IMG_9752.jpg"><img  class="photo-grid" src="../photos/IMG_9752.jpg"></a></li>
-		<li><a href="../photos/IMG_9753.jpg"><img  class="photo-grid" src="../photos/IMG_9753.jpg"></a></li>
-		<li><a href="../photos/IMG_9754.jpg"><img  class="photo-grid" src="../photos/IMG_9754.jpg"></a></li>
-		<li><a href="../photos/IMG_9755.jpg"><img  class="photo-grid" src="../photos/IMG_9755.jpg"></a></li>
-		<li><a href="../photos/IMG_9756.jpg"><img  class="photo-grid" src="../photos/IMG_9756.jpg"></a></li>
-		<li><a href="../photos/IMG_9757.jpg"><img  class="photo-grid" src="../photos/IMG_9757.jpg"></a></li>
-		<li><a href="../photos/IMG_9760.jpg"><img  class="photo-grid" src="../photos/IMG_9760.jpg"></a></li>
-	
-	</ul>
-	
+		</div>
 
+		<!-- Main navigation menu -->
+		<nav class="main-menu">
+			<ul>
+				<li><a href="../index.html">The Lumberjack 5k</a></li>
+				<li><a href="about.html">About the Run</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="about_the_festival.html">About the Festival</a></li>	
+			</ul>
+		</nav>
 
-</main>
+		<!-- Nav switches to display:none for smaller screens and is toggled here: -->
+		<div class="info-button">
+			<p>More Info</p>
+		</div>
 
+		<nav class="more-info-menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="about.html">The Run</a></li>
+				<li><a href="results.html">Results</a></li>
+				<li><a href="about_the_festival.html">The Festival</a></li>
+			</ul>		
+		</nav>
 
-<!-- <aside>
-	
+		<form class="results-form">
 
+			<fieldset class="formfield">
 
-</aside> -->
+				<legend><b>Please select a year:</b></legend>
 
+				Year: 
+				<select name="Select">
+					<option class="selected-year" value="select">Year</option>
+					<option class="selected-year" value="2015">2015</option>
+					<option class="selected-year" value="2014">2014</option>
+					<option class="selected-year" value="2013">2013</option>
+				</select>
+				
+			</fieldset>
 
-<footer>
-	<a href="https://www.facebook.com/thelumberjack5k/?ref=hl" target="_blank"><b>Facebook</b></a>
+		</form>	
 
-</footer>
+		<div class="photo-grid-wrapper">
 
-</body>
+			<h4 id="photos-heading"> Select from the dropdown above to display photos from previous years.<!-- Year is filled via dropdown selection --> </h4>
+			
+			<ul class="photo-list 2015-photos">
+
+				<li><a href="../photos/IMG_9738.jpg"><img  class="photo-grid" src="../photos/IMG_9738thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9739.jpg"><img  class="photo-grid" src="../photos/IMG_9739thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9740.jpg"><img  class="photo-grid" src="../photos/IMG_9740thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9742.jpg"><img  class="photo-grid" src="../photos/IMG_9742thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9743.jpg"><img  class="photo-grid" src="../photos/IMG_9743thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9745.jpg"><img  class="photo-grid" src="../photos/IMG_9745thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9746.jpg"><img  class="photo-grid" src="../photos/IMG_9746thumb.jpg"></a></li>
+				<!-- <li><a href="../photos/IMG_9747.jpg"><img  class="photo-grid" src="../photos/IMG_9747thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9748.jpg"><img  class="photo-grid" src="../photos/IMG_9748thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9751.jpg"><img  class="photo-grid" src="../photos/IMG_9751thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9752.jpg"><img  class="photo-grid" src="../photos/IMG_9752thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9753.jpg"><img  class="photo-grid" src="../photos/IMG_9753thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9754.jpg"><img  class="photo-grid" src="../photos/IMG_9754thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9763.jpg"><img  class="photo-grid" src="../photos/IMG_9763thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9767.jpg"><img  class="photo-grid" src="../photos/IMG_9767thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9772.jpg"><img  class="photo-grid" src="../photos/IMG_9772thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9783.jpg"><img  class="photo-grid" src="../photos/IMG_9783thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9799.jpg"><img  class="photo-grid" src="../photos/IMG_9799thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9810.jpg"><img  class="photo-grid" src="../photos/IMG_9810thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9835.jpg"><img  class="photo-grid" src="../photos/IMG_9835thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9842.jpg"><img  class="photo-grid" src="../photos/IMG_9842thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9850.jpg"><img  class="photo-grid" src="../photos/IMG_9850thumb.jpg"></a></li> -->
+			
+			</ul>
+
+			<ul class="photo-list 2014-photos">
+				<!-- <li><a href="../photos/IMG_9738.jpg"><img  class="photo-grid" src="../photos/IMG_9738thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9739.jpg"><img  class="photo-grid" src="../photos/IMG_9739thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9740.jpg"><img  class="photo-grid" src="../photos/IMG_9740thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9742.jpg"><img  class="photo-grid" src="../photos/IMG_9742thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9743.jpg"><img  class="photo-grid" src="../photos/IMG_9743thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9745.jpg"><img  class="photo-grid" src="../photos/IMG_9745thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9746.jpg"><img  class="photo-grid" src="../photos/IMG_9746thumb.jpg"></a></li> -->
+				<li><a href="../photos/IMG_9747.jpg"><img  class="photo-grid" src="../photos/IMG_9747thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9748.jpg"><img  class="photo-grid" src="../photos/IMG_9748thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9751.jpg"><img  class="photo-grid" src="../photos/IMG_9751thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9752.jpg"><img  class="photo-grid" src="../photos/IMG_9752thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9753.jpg"><img  class="photo-grid" src="../photos/IMG_9753thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9754.jpg"><img  class="photo-grid" src="../photos/IMG_9754thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9763.jpg"><img  class="photo-grid" src="../photos/IMG_9763thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9767.jpg"><img  class="photo-grid" src="../photos/IMG_9767thumb.jpg"></a></li>
+				<!-- <li><a href="../photos/IMG_9772.jpg"><img  class="photo-grid" src="../photos/IMG_9772thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9783.jpg"><img  class="photo-grid" src="../photos/IMG_9783thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9799.jpg"><img  class="photo-grid" src="../photos/IMG_9799thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9810.jpg"><img  class="photo-grid" src="../photos/IMG_9810thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9835.jpg"><img  class="photo-grid" src="../photos/IMG_9835thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9842.jpg"><img  class="photo-grid" src="../photos/IMG_9842thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9850.jpg"><img  class="photo-grid" src="../photos/IMG_9850thumb.jpg"></a></li> -->
+			
+			</ul>
+
+			<ul class="photo-list 2013-photos">
+				<!-- <li><a href="../photos/IMG_9738.jpg"><img  class="photo-grid" src="../photos/IMG_9738thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9739.jpg"><img  class="photo-grid" src="../photos/IMG_9739thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9740.jpg"><img  class="photo-grid" src="../photos/IMG_9740thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9742.jpg"><img  class="photo-grid" src="../photos/IMG_9742thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9743.jpg"><img  class="photo-grid" src="../photos/IMG_9743thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9745.jpg"><img  class="photo-grid" src="../photos/IMG_9745thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9746.jpg"><img  class="photo-grid" src="../photos/IMG_9746thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9747.jpg"><img  class="photo-grid" src="../photos/IMG_9747thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9748.jpg"><img  class="photo-grid" src="../photos/IMG_9748thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9751.jpg"><img  class="photo-grid" src="../photos/IMG_9751thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9752.jpg"><img  class="photo-grid" src="../photos/IMG_9752thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9753.jpg"><img  class="photo-grid" src="../photos/IMG_9753thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9754.jpg"><img  class="photo-grid" src="../photos/IMG_9754thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9763.jpg"><img  class="photo-grid" src="../photos/IMG_9763thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9767.jpg"><img  class="photo-grid" src="../photos/IMG_9767thumb.jpg"></a></li> -->
+				<li><a href="../photos/IMG_9772.jpg"><img  class="photo-grid" src="../photos/IMG_9772thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9783.jpg"><img  class="photo-grid" src="../photos/IMG_9783thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9799.jpg"><img  class="photo-grid" src="../photos/IMG_9799thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9810.jpg"><img  class="photo-grid" src="../photos/IMG_9810thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9835.jpg"><img  class="photo-grid" src="../photos/IMG_9835thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9842.jpg"><img  class="photo-grid" src="../photos/IMG_9842thumb.jpg"></a></li>
+				<li><a href="../photos/IMG_9850.jpg"><img  class="photo-grid" src="../photos/IMG_9850thumb.jpg"></a></li>
+			
+			</ul>
+
+		</div>
+
+		<footer>
+			<a href="https://www.facebook.com/thelumberjack5k/?ref=hl" target="_blank"><b>More updates available on our Facebook page!</b></a>
+
+			<a class="small-footer" href="https://www.facebook.com/thelumberjack5k/?ref=hl" target="_blank"><b>See our Facebook page!</b></a>
+
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js" type="text/javascript"></script>
+		<script src="../js/index.js" type="text/javascript"></script>
+		<script src="../js/photos.js" type="text/javascript"></script>
+
+	</body>
 </html>
